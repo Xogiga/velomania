@@ -34,6 +34,7 @@
 
         <input type="submit" value="Inscription" class="sansLabel" />
         <br />
+        <p>${resultat}</p>
     </fieldset>
 </form>
 </body>
