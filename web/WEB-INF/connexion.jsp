@@ -3,14 +3,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Inscription</title>
+    <title>Connexion</title>
     <link type="text/css" rel="stylesheet" href="inscription.css" />
 </head>
 <body>
-<form method="post" action="form">
+<form method="post" action="connexion">
     <fieldset>
-        <legend>Inscription</legend>
-        <p>Vous pouvez vous inscrire via ce formulaire.</p>
+        <legend>Connexion</legend>
+        <p>Vous pouvez vous connecter via ce formulaire.</p>
 
         <label for="email">Adresse email <span class="requis">*</span></label>
         <input type="email" id="email" name="email" value="" size="20" maxlength="60" />
@@ -22,18 +22,9 @@
         <span class="erreur">${form.erreurs['motdepasse']}</span>
         <br />
 
-        <label for="confirmation">Confirmation du mot de passe <span class="requis">*</span></label>
-        <input type="password" id="confirmation" name="confirmation" value="" size="20" maxlength="20" />
-        <span class="erreur">${form.erreurs['confirmation']}</span>
+        <input type="submit" value="Connexion" class="sansLabel" />
         <br />
 
-        <label for="nom">Nom d'utilisateur</label>
-        <input type="text" id="nom" name="nom" value="" size="20" maxlength="20" />
-        <span class="erreur">${form.erreurs['nom']}</span>
-        <br />
-
-        <input type="submit" value="Inscription" class="sansLabel" />
-        <br />
         <p>${form.resultat}</p>
     </fieldset>
 </form>

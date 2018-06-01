@@ -8,19 +8,20 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 public final class InscriptionForm {
-    private static final String CHAMP_EMAIL= "email";
+    private static final String CHAMP_EMAIL = "email";
     private static final String CHAMP_PASS = "motdepasse";
     private static final String CHAMP_CONF = "confirmation";
     private static final String CHAMP_NOM = "nom";
-
     private String resultat;
     private Map<String, String> erreurs = new HashMap<String, String>();
 
     public String getResultat() {
+
         return resultat;
     }
 
     public Map<String, String> getErreurs() {
+
         return erreurs;
     }
 
@@ -54,7 +55,7 @@ public final class InscriptionForm {
         } else {
             resultat = "Échec de l'inscription.";
         }
-        
+
         Utilisateur utilisateur = new Utilisateur(email, motDePasse, nom);
 
         return utilisateur;
